@@ -15,3 +15,13 @@ body{
     @include text(700, 20px);
     margin-bottom: 70px;
 }
+
+.btn{
+    display: block;
+    background-color: $color-red;
+    padding: 27px 50px;
+    border-radius: 100px;
+    color: #fff;
+    @include text(700, 16px);
+    box-shadow: 0 11px 30px #E52114;
+}

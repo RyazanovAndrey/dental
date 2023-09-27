@@ -1,0 +1,32 @@
+.services{
+
+    padding: 100px 0;
+
+    .services-wrapper{
+        display: grid;
+        gap: 30px;
+        grid-template-areas: 
+        "img1 img1 img2 img3"
+        "img4 img5 img5 img6"
+        ;
+
+        .services-img:nth-child(1){
+            grid-area: img1;
+        }
+        .services-img:nth-child(2){
+            grid-area: img2;
+        }
+        .services-img:nth-child(3){
+            grid-area: img3;
+        }
+        .services-img:nth-child(4){
+            grid-area: img4;
+        }
+        .services-img:nth-child(5){
+            grid-area: img5;
+        }
+        .services-img:nth-child(6){
+            grid-area: img6;
+        }
+    }
+}
