@@ -1,0 +1,56 @@
+.header{
+
+    .header-top{
+        background-color: $color-BG;
+        padding: 8px 0;
+
+        .header-top-wrapper{
+            display: flex;
+            justify-content: space-between;
+            @include text(400, 16px);
+            color: $color-6;
+        }
+    }
+
+    .header-bottom{
+        padding: 10px 0;
+        background-color: $color-6;
+
+        .header-bottom-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-logo{
+                @include text(600, 35px);
+                color: $color-green-light;
+            }
+
+            .menu{
+                display: flex;
+                column-gap: 35px;
+
+                .menu-link{
+                    color: $color-green-light;
+                    @include text(400, 16px)
+                }
+            }
+
+            .header-contacts{
+
+                text-align: right;
+
+                .header-tel{
+                @include text(700, 20px);
+                color: $color-green-light;
+                }
+
+                .call-me{
+                    @include text(400, 16px);
+                    color: $color-BG;
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+}
