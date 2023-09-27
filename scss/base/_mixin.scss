@@ -1,0 +1,10 @@
+@mixin text($fw, $fz){
+    font-weight: $fw;
+    font-size: $fz;
+}
+
+@mixin adaptive(){
+    @media(max-width:1200px){
+        @content
+    }
+}
