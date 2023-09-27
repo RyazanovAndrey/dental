@@ -32,7 +32,12 @@
 
                 .menu-link{
                     color: $color-green-light;
-                    @include text(400, 16px)
+                    @include text(400, 16px);
+                    transition: 0.3s;
+
+                    &:hover{
+                        color: $color-BG;
+                    }
                 }
             }
 

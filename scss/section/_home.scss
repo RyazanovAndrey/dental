@@ -1,0 +1,42 @@
+.home{
+
+    background-image: url(../../img/offer-list.jpg);
+    min-height: 700px;
+    padding-top: 120px;
+    object-fit: cover;
+    object-position: center;
+
+    .home-content{
+
+        max-width: 540px;
+
+        .home-bold{
+            color: $color-red;
+        }
+
+        .home-desc{
+            @include text(400, 20px)
+
+        }
+
+        .home-title{
+            @include text(700, 35px);
+            margin: 70px 0;
+        }
+
+        .home-text{
+            @include text(400, 16px)
+        }
+
+        .home-btn{
+            display: block;
+            background-color: $color-red;
+            padding: 27px 50px;
+            border-radius: 100px;
+            color: #fff;
+            @include text(700, 16px);
+            box-shadow: 0 11px 30px #E52114;
+            margin-top: 70px;
+        }
+    }
+}

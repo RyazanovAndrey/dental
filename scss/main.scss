@@ -1,6 +1,8 @@
 @import './base/vars';
+@import './base/mixin';
 @import './base/base';
 @import './base/reset';
-@import './base/mixin';
 
 @import './section/header';
+@import './section/home';
+@import './section/why';

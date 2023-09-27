@@ -1,0 +1,23 @@
+.why{
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .why-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .why-card{
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 30px 35px;
+        text-align: center;
+    }
+
+    .why-text{
+        @include text(500, 20px);
+        color: $color-green;
+        margin-top: 20px;
+    }
+}

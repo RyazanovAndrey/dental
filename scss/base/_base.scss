@@ -2,10 +2,16 @@
 
 body{
     font-family: 'Montserrat';
+    background-color: $color-BG;
 }
 
 .container{
     max-width: $desktop;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.title{
+    @include text(700, 20px);
+    margin-bottom: 70px;
 }

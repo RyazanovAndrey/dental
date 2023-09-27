@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "Montserrat";
+  background-color: #f8f8f8;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 70px;
 }
 
 /* Reset and base styles  */
@@ -143,6 +150,10 @@ legend {
   color: #e3ffd1;
   font-weight: 400;
   font-size: 16px;
+  transition: 0.3s;
+}
+.header .header-bottom .header-bottom-wrapper .menu .menu-link:hover {
+  color: #f8f8f8;
 }
 .header .header-bottom .header-bottom-wrapper .header-contacts {
   text-align: right;
@@ -157,4 +168,66 @@ legend {
   font-size: 16px;
   color: #f8f8f8;
   border-bottom: 1px solid;
+}
+
+.home {
+  background-image: url(../../img/offer-list.jpg);
+  min-height: 700px;
+  padding-top: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.home .home-content {
+  max-width: 540px;
+}
+.home .home-content .home-bold {
+  color: #e94035;
+}
+.home .home-content .home-desc {
+  font-weight: 400;
+  font-size: 20px;
+}
+.home .home-content .home-title {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 70px 0;
+}
+.home .home-content .home-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+.home .home-content .home-btn {
+  display: block;
+  background-color: #e94035;
+  padding: 27px 50px;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 11px 30px #E52114;
+  margin-top: 70px;
+}
+
+.why {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.why .why-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.why .why-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 35px;
+  text-align: center;
+}
+.why .why-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #4d8d63;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
