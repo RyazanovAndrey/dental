@@ -10,6 +10,12 @@
         "img4 img5 img5 img6"
         ;
 
+        .services-img-text{
+            @include text(500, 18px);
+            color: $color-6;
+            margin-top: 20px;
+        }
+
         .services-img:nth-child(1){
             grid-area: img1;
         }

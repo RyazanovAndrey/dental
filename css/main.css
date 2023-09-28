@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
   background-color: #f8f8f8;
@@ -24,7 +28,11 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
-  box-shadow: 0 11px 30px #E52114;
+  box-shadow: 0 11px 20px hsla(4, 84%, 49%, 0.2);
+}
+.btn:hover {
+  position: relative;
+  top: -1px;
 }
 
 /* Reset and base styles  */
@@ -127,6 +135,11 @@ legend {
   display: block;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 .header .header-top {
   background-color: #f8f8f8;
   padding: 8px 0;
@@ -182,13 +195,14 @@ legend {
 }
 
 .home {
-  background-image: url(../../img/offer-list.jpg);
+  background-image: url(../img/offer-list.jpg);
   min-height: 700px;
   padding-top: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  margin-top: 90px;
 }
 .home .home-content {
   max-width: 540px;
@@ -208,6 +222,7 @@ legend {
 .home .home-content .home-text {
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 60px;
 }
 
 .why {
@@ -240,6 +255,12 @@ legend {
   gap: 30px;
   grid-template-areas: "img1 img1 img2 img3" "img4 img5 img5 img6";
 }
+.services .services-wrapper .services-img-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #4d828d;
+  margin-top: 20px;
+}
 .services .services-wrapper .services-img:nth-child(1) {
   grid-area: img1;
 }
@@ -264,6 +285,9 @@ legend {
   background-repeat: no-repeat;
   padding: 50px 0;
 }
+.consultation .cons-wrapper .consultation-text {
+  max-width: 680px;
+}
 .consultation .consultation-form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -276,10 +300,90 @@ legend {
   height: 60px;
   border-radius: 100px;
   text-align: center;
+  border: 1px solid #e94035;
 }
 .consultation .consultation-form .cons-input::-moz-placeholder {
   text-align: center;
 }
 .consultation .consultation-form .cons-input::placeholder {
   text-align: center;
+}
+
+.doctors {
+  padding: 100px 0;
+}
+
+.doc-slider {
+  position: relative;
+}
+.doc-slider .swiper {
+  overflow: hidden;
+}
+.doc-slider .swiper-wrapper {
+  display: inline-flex;
+}
+.doc-slider .doc-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.doc-slider .doc-arrows .arrow-img {
+  background-image: url(../img/arrow.svg);
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.doc-slider .doc-arrows .arrow-img.swiper-button-prev {
+  position: relative;
+  left: -30px;
+}
+.doc-slider .doc-arrows .arrow-img.swiper-button-prev:hover {
+  opacity: 1;
+}
+.doc-slider .doc-arrows .arrow-img.swiper-button-next {
+  position: relative;
+  right: -30px;
+  transform: rotate(180deg);
+}
+.doc-slider .doc-arrows .arrow-img.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.card {
+  width: 270px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card .card-wrapper {
+  padding: 40px 0 25px 20px;
+}
+.card .card-wrapper .card-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.card .card-wrapper .card-job {
+  font-weight: 700;
+  font-size: 16px;
+  color: #e94035;
+  margin-bottom: 6px;
+}
+.card .card-wrapper .card-year {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.card .card-wrapper .card-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #4d8d63;
+  background: url(../../img/arrow-small.svg) no-repeat center right;
+  padding-right: 45px;
+  height: 30px;
 }/*# sourceMappingURL=main.css.map */

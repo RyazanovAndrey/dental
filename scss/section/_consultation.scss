@@ -6,6 +6,9 @@
 
     .cons-wrapper{
 
+        .consultation-text{
+            max-width: 680px;
+        }
     }
 
     .consultation-form{
@@ -20,6 +23,7 @@
             height: 60px;
             border-radius: 100px;
             text-align: center;
+            border: 1px solid $color-red;
 
             &::placeholder{
                 text-align: center;

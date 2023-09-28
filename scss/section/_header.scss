@@ -1,5 +1,9 @@
 .header{
 
+    position: fixed;
+    width: 100%;
+    top: 0;
+
     .header-top{
         background-color: $color-BG;
         padding: 8px 0;
@@ -13,6 +17,7 @@
     }
 
     .header-bottom{
+
         padding: 10px 0;
         background-color: $color-6;
 

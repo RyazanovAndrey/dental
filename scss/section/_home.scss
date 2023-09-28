@@ -1,10 +1,11 @@
 .home{
 
-    background-image: url(../../img/offer-list.jpg);
+    background-image: url(../img/offer-list.jpg);
     min-height: 700px;
     padding-top: 120px;
     object-fit: cover;
     object-position: center;
+    margin-top: 90px;
 
     .home-content{
 
@@ -25,7 +26,8 @@
         }
 
         .home-text{
-            @include text(400, 16px)
+            @include text(400, 16px);
+            margin-bottom: 60px;
         }
     }
 }

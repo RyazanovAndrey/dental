@@ -1,0 +1,86 @@
+.doctors{
+    padding: 100px 0;
+}
+
+.doc-slider{
+    position: relative;
+
+    .swiper{
+        overflow: hidden;
+    }
+
+    .swiper-wrapper{
+        display: inline-flex;
+    }
+
+    .doc-arrows{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+
+        .arrow-img{
+            background-image: url(../img/arrow.svg);
+            width: 60px;
+            height: 60px;
+            opacity: 0.4;
+            transition: 0.3s;
+
+            &.swiper-button-prev{
+                position: relative;
+                left: -30px;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+
+            &.swiper-button-next{
+                position: relative;
+                right: -30px;
+                transform: rotate(180deg);
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.card{
+    width: 270px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .card-wrapper{
+
+        padding: 40px 0 25px 20px;
+
+        .card-title{
+            @include text(700, 18px);
+            margin-bottom: 30px;
+        }
+        .card-job{
+            @include text(700, 16px);
+            color: $color-red;
+            margin-bottom: 6px;
+        }
+        .card-year{
+            @include text(400, 14px);
+            margin-bottom: 35px;
+        }
+        .card-btn{
+            @include text(700, 16px);
+            color: $color-green;
+            background: url(../../img/arrow-small.svg) no-repeat center right;
+            padding-right: 45px;
+            height: 30px;
+        }
+    }
+}
+

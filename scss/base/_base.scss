@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat';
     background-color: $color-BG;
@@ -23,5 +27,11 @@ body{
     border-radius: 100px;
     color: #fff;
     @include text(700, 16px);
-    box-shadow: 0 11px 30px #E52114;
+    box-shadow: 0 11px 20px hsla(4, 84%, 49%, 0.20);
+    
+
+    &:hover{
+        position: relative;
+        top: -1px;
+    }
 }
