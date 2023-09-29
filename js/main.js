@@ -15,10 +15,10 @@ const swiper = new Swiper('.swiper', {
 
 // Pop-up
 
-const btn = document.querySelector('.btn')
-const popUp = document.querySelector('.pop-up-body')
-const body = document.body
-const bodyPx = window.innerWidth - document.body.offsetWidth + 'px'
+const btn = document.querySelector('.btn');
+const popUp = document.querySelector('.pop-up-body');
+const body = document.body;
+const bodyPx = window.innerWidth - document.body.offsetWidth + 'px';
 
 function opnPop (){
   popUp.classList.add('open');
@@ -41,6 +41,6 @@ document.addEventListener('click', (event) => {
 const cardBtn = document.querySelectorAll('.card-btn')
 cardBtn.forEach(item => {
   item.addEventListener('click', () => {
-    opnPop()
+    opnPop();
   })
 })
