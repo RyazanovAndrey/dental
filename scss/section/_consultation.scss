@@ -1,33 +1,31 @@
-.consultation{
+.consultation {
+  background-image: url(../img/bg-consultation.jpg);
+  background-repeat: no-repeat;
+  padding: 50px 0;
 
-    background-image: url(../img/bg-consultation.jpg);
-    background-repeat: no-repeat;
-    padding: 50px 0;
-
-    .cons-wrapper{
-
-        .consultation-text{
-            max-width: 680px;
-        }
+  .cons-wrapper {
+    .consultation-text {
+      max-width: 680px;
     }
+  }
 
-    .consultation-form{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        gap: 30px;
-        margin-top: 50px;
+  .consultation-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
 
-        .cons-input{
-            border: 1px solid #000;
-            height: 60px;
-            border-radius: 100px;
-            text-align: center;
-            border: 1px solid $color-red;
+    .cons-input {
+      border: 1px solid #000;
+      height: 60px;
+      border-radius: 100px;
+      text-align: center;
+      border: 1px solid $color-red;
 
-            &::placeholder{
-                text-align: center;
-            }
-        }
+      &::placeholder {
+        text-align: center;
+      }
     }
+  }
 }

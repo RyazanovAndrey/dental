@@ -1,33 +1,30 @@
-.home{
+.home {
+  background-image: url(../img/Offer-list.jpg);
+  min-height: 700px;
+  padding-top: 120px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 90px;
 
-    background-image: url(../img/Offer-list.jpg);
-    min-height: 700px;
-    padding-top: 120px;
-    object-fit: cover;
-    object-position: center;
-    margin-top: 90px;
+  .home-content {
+    max-width: 540px;
 
-    .home-content{
-
-        max-width: 540px;
-
-        .home-bold{
-            color: $color-red;
-        }
-
-        .home-desc{
-            @include text(400, 20px)
-
-        }
-
-        .home-title{
-            @include text(700, 35px);
-            margin: 70px 0;
-        }
-
-        .home-text{
-            @include text(400, 16px);
-            margin-bottom: 60px;
-        }
+    .home-bold {
+      color: $color-red;
     }
+
+    .home-desc {
+      @include text(400, 20px);
+    }
+
+    .home-title {
+      @include text(700, 35px);
+      margin: 70px 0;
+    }
+
+    .home-text {
+      @include text(400, 16px);
+      margin-bottom: 60px;
+    }
+  }
 }
