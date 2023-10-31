@@ -211,12 +211,21 @@ legend {
   visibility: visible;
 }
 .pop-up-body .pop-up {
+  padding: 50px 40px;
   background-color: #fff;
-  width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.pop-up-body .pop-up .pop-up-title {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+.pop-up-body .pop-up .pop-up-text {
+  margin: 40px 0;
 }
 
 .home {

@@ -16,11 +16,20 @@
     }
 
     .pop-up{
+        padding: 50px 40px;
         background-color: #fff;
-        width: 300px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        border-radius: 20px;
+
+        .pop-up-title{
+            @include text(700, 25px);
+            text-align: center;
+        }
+        .pop-up-text{
+            margin: 40px 0;
+        }
     }
 }
