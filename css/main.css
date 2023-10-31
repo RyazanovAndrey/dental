@@ -29,10 +29,10 @@ body {
   font-weight: 700;
   font-size: 16px;
   box-shadow: 0 11px 20px hsla(4, 84%, 49%, 0.2);
+  transition: 0.5s;
 }
 .btn:hover {
-  position: relative;
-  top: -1px;
+  background-color: #C9382E;
 }
 
 /* Reset and base styles  */
@@ -139,6 +139,7 @@ legend {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 99;
 }
 .header .header-top {
   background-color: #f8f8f8;
@@ -198,7 +199,7 @@ legend {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   opacity: 0;
@@ -218,6 +219,7 @@ legend {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+  max-width: 580px;
 }
 .pop-up-body .pop-up .pop-up-title {
   font-weight: 700;
@@ -226,6 +228,38 @@ legend {
 }
 .pop-up-body .pop-up .pop-up-text {
   margin: 40px 0;
+}
+.pop-up-body .pop-up .pop-up-form {
+  height: 60px;
+  border: 1px solid #000;
+  width: 100%;
+  border-radius: 100px;
+  text-align: center;
+  margin: 10px 0;
+}
+.pop-up-body .pop-up .pop-up-form::-moz-placeholder {
+  color: #AFAFAF;
+}
+.pop-up-body .pop-up .pop-up-form::placeholder {
+  color: #AFAFAF;
+}
+.pop-up-body .pop-up .pop-up-btn {
+  background-color: #e94035;
+  padding: 27px 0;
+  width: 100%;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 11px 20px hsla(4, 84%, 49%, 0.2);
+  transition: 0.2s;
+}
+.pop-up-body .pop-up .pop-up-btn:hover {
+  background-color: #C9382E;
+}
+
+.check {
+  margin-top: 20px;
 }
 
 .home {

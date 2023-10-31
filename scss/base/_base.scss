@@ -28,10 +28,9 @@ body{
     color: #fff;
     @include text(700, 16px);
     box-shadow: 0 11px 20px hsla(4, 84%, 49%, 0.20);
-    
+    transition: 0.5s;
 
     &:hover{
-        position: relative;
-        top: -1px;
+        background-color: #C9382E;
     }
 }
